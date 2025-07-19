@@ -1,0 +1,115 @@
+        /* Basic body styling */
+        body {
+            background-color: bisque;
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-image: url(/beige.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* Heading styles */
+        h1 {
+            text-align: center;
+            border-bottom: 3px dotted red;
+            padding-bottom: 10px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #444;
+        }
+
+
+        /* Form container styling */
+        form {
+            max-width: 700px;
+            margin: auto;
+            background-color: #fff8ee;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        /* Label styling */
+        label {
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        /* Input and textarea styling */
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        /* Allow vertical resizing of the textarea */
+        textarea {
+            resize: vertical;
+        }
+
+        /* General button styling */
+        button {
+            padding: 10px 20px;
+            margin: 10px 10px 0 0;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Specific button color styling */
+        .Post {
+            background-color: green;
+            color: white;
+        }
+
+        .Cancel {
+            background-color: red;
+            color: white;
+        }
+
+        /* Hover effects for buttons */
+        button.Cancel:hover {
+            border: 5px dashed rgb(50, 1, 1);
+            background-color: #b30000;
+        }
+
+        button.Post:hover {
+            border: 5px dashed rgb(0, 50, 0);
+            background-color: #006600;
+        }
+
+        /* Styling for grade checkboxes */
+        label.grade {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        /* Hover effect for grade labels */
+        label.grade:hover {
+            border: 3px solid red;
+            padding: 5px;
+            border-radius: 8px;
+        }

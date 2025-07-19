@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page Title -->
+    <title>Student Announcement Login Page</title>
+
+    <!-- external CSS file-->
+    <link rel="stylesheet" type="text/css" href="Login Page.css">
+
+    <!-- JavaScript file -->
+    <script src="login page.js"></script>
+</head>
+<body>
+
+ 
+    <h1>Login Page</h1>
+
+   
+    <!-- onsubmit calls the teacherLogin() function from js and passes the form -->
+    <form method="POST" name="loginForm" onsubmit="return teacherLogin(this);">
+
+        <!-- Username input box -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <!-- Password input box -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <!-- Button to submit the form -->
+        <button type="submit" class="Post" value="login">Login</button>
+
+        <!-- Button to go to the student search page -->
+        <a href="/Student search page.html">
+            <button type="button" class="Student">I am a Student</button>
+        </a>
+
+        <!--showing login errors -->
+        <p id="loginError"> </p>
+    </form>
+
+</body>
+</html>

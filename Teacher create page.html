@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher create</title>
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="/teacher create css.css">
+</head>
+<body>
+
+    <!-- Navigation buttons -->
+    <button type="button" onclick="window.location.href='/Teacher-homepage.html'">Back</button>
+    <button type="button" onclick="window.location.href='/loginPage.html'">Home</button>
+
+    <br><br>
+
+    <!-- Announcement form -->
+    <form id="announcementForm">
+
+        <h1>Teacher Create Page</h1>
+
+        <!-- Input for title -->
+        <label for="titleT">Title:</label>
+        <input type="text" name="titleT" id="titleT">
+
+        <br><br>
+
+        <!-- Input for date -->
+        <label for="dateT">Date:</label>
+        <input type="date" name="dateT" id="dateT">
+
+        <br><br>
+
+        <!-- Input for description -->
+        <label for="descriptionT">Description:</label>
+        <textarea name="descriptionT" id="descriptionT" rows="5" cols="50"></textarea>
+
+        <br><br>
+
+        <!-- Club dropdown -->
+        <label for="clubT">Club:</label>
+        <select id="clubT" name="clubT">
+            <option value="" selected disabled>Select Club</option>
+            <option value="general">General</option>
+            <option value="mun">MUN</option>
+            <option value="debate">Debate</option>
+            <option value="deca">DECA</option>
+        </select>
+        
+
+        <br><br>
+
+        <!-- Category dropdown -->
+        <label for="categoriesT">Categories:</label>
+        <select id="categoriesT" name="categoriesT">
+            <option value="" selected disabled>Select Category</option>
+            <option value="general">General</option>
+            <option value="sports">Sports</option>
+            <option value="academic">Academic</option>
+            <option value="events">Events</option>
+        </select>
+        
+
+        <!-- Grade checkboxes -->
+        <h2>Grade:</h2>
+            <label class="grade"><input type="checkbox" name="grade9" value="9"> 9</label>
+            <label class="grade"><input type="checkbox" name="grade10" value="10"> 10</label>
+            <label class="grade"><input type="checkbox" name="grade11" value="11"> 11</label>
+            <label class="grade"><input type="checkbox" name="grade12" value="12"> 12</label>
+        <br><br>
+
+            <!-- Formatting buttons -->
+        <button type="button"><b>B</b></button>
+        <button type="button"><i>I</i></button>
+        <button type="button"><u>U</u></button>
+
+        <br><br>
+
+        <!-- Action buttons -->
+        <button type="button" class="Cancel" onclick="cancelAnnouncement()" style="color: white;">Cancel</button>
+        <button type="button" class="Post" onclick="addNewAnnouncement(this.form)" style="color: white;">POST</button>
+    </form>
+
+    <!-- JavaScript file -->
+    <script src="/teacher create .js"></script>
+ 
+</body>
+</html>

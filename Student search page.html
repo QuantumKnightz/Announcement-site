@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Submission</title>
+    <!-- linkiung css file -->
+    <link rel="stylesheet" href="/studet search css.css">
+</head>
+<body>
+
+    <!-- Home button -->
+    <a href="/loginPage.html">
+        <button type="button">HOME</button>
+    </a>
+
+    <!-- Search/filter form -->
+    <form id="studentForm">
+        <!-- Page title -->
+        <h1>Student Search Page</h1>
+
+        <br><br>
+
+        <!-- Event title input -->
+        <label>Title</label>
+        <input type="text" name="titleS">
+
+        <!-- Event date input -->
+        <label>Date</label>
+        <input type="date" name="dateS">
+
+        <!-- Description textarea -->
+        <label for="descriptionS">Description:</label>
+        <textarea id="descriptionS" name="descriptionS" rows="5" cols="50"></textarea>
+
+        <!-- Club dropdown -->
+        <label for="clubS">Club:</label>
+        <select id="clubS" name="clubS">
+            <option value="" selected disabled>Select Club</option>
+            <option value="mun">MUN</option>
+            <option value="debate">Debate</option>
+            <option value="deca">DECA</option>
+        </select>
+
+        <!-- Categories dropdown -->
+        <label for="categoriesS">Categories:</label>
+        <select id="categoriesS" name="categoriesS">
+            <option value="" selected disabled>Select Category</option>
+            <option value="sports">Sports</option>
+            <option value="academic">Academic</option>
+            <option value="events">Events</option>
+        </select>
+
+        <!-- Grade selection checkboxes -->
+        <h2>Grade:</h2>
+        
+        <label class="grade" style="display:inline-block;"><input type="checkbox" name="grade9S" value="9"> 9</label>
+        <label class="grade" style="display:inline-block;"><input type="checkbox" name="grade10S" value="10"> 10</label>
+        <label class="grade" style="display:inline-block;"><input type="checkbox" name="grade11S" value="11"> 11</label>
+        <label class="grade" style="display:inline-block;"><input type="checkbox" name="grade12S" value="12"> 12</label>
+
+        <br><br>
+
+        <!-- Formatting buttons -->
+        <div class="formatting-buttons">
+            <button type="button"><b>B</b></button>
+            <button type="button"><i>I</i></button>
+            <button type="button"><u>U</u></button>
+        </div>
+
+        <br><br>
+
+        <!-- Cancel and Search buttons -->
+        <button type="button" class="Cancel" onclick="cancelSearch()">Cancel</button>
+        <a href="/Student Result Page.html">
+            <button type="button" class="Post" onclick="searchAnnouncement(this.form)">Filter Search</button>
+        </a>
+</form>
+
+    <!-- JS file -->
+    <script src="/Student search file.js"></script>
+</body>
+</html>
