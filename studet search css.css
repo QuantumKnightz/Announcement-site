@@ -1,0 +1,115 @@
+/* Basic body styling */
+body {
+    background-color: bisque;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background-image: url(/beige.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Main heading styling */
+h1 {
+    text-align: center;
+    border-bottom: 3px dotted red;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    color: #3a2f2f;
+}
+
+/* Form container styling */
+form {
+    max-width: 700px;
+    margin: auto;
+    background-color: #fff8ee;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Grade checkbox styling */
+.grade {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 5px 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Cancel button styling */
+.Cancel {
+    background-color: red;
+    color: white;
+}
+
+.Cancel:hover {
+    border: 3px dashed rgb(50, 1, 1);
+    transform: scale(1.05);
+}
+
+/* Post button styling */
+.Post {
+    background-color: green;
+    color: white;
+}
+
+.Post:hover {
+    border: 3px dashed rgb(0, 50, 0);
+    transform: scale(1.05);
+}
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+}
+/* Formatting buttons */
+button b,
+button i,
+button u {
+    pointer-events: none;
+}
+
+/* Center grade heading */
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}

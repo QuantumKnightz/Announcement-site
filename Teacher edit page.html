@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher edit page</title>
+    <!-- The title shown on the browser tab -->
+
+       <style>
+        /* Inline CSS to set the background color of the page */
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+
+     <h1>Teacher Edit Page</h1>
+    <!-- Navigation buttons to go back or home -->
+    <a href="/Teacher homepage.html">
+        <button>BACK</button>
+    </a>
+    <a href="/loginPage.html">
+        <button>HOME</button>
+    </a>
+
+    <br><br>
+    
+    <!-- Dropdown to select the Club -->
+    <label for="club">Club:</label>
+    <select id="club">
+        <option value="mun">MUN</option>
+        <option value="debate">Debate</option>
+        <option value="deca">DECA</option>
+    </select>
+
+    <br><br>
+
+    <!-- Dropdown to select the Category -->
+    <label for="categories">Categories:</label>
+    <select id="categories">
+        <option value="general">General</option>
+        <option value="sports">Sports</option>
+        <option value="academic" aria-checked="true">Academic</option>
+        <option value="events">Events</option>
+    </select>
+    
+    <!-- Grade selection using radio buttons -->
+    <h2>Grade:</h2>
+    <label><input type="radio" checked name="grade" value="9"> 9</label>
+    <label><input type="radio" name="grade" value="10"> 10</label>
+    <label><input type="radio" name="grade" value="11"> 11</label>
+    <label><input type="radio" name="grade" value="12"> 12</label>
+    
+    <br><br>
+    
+    <!-- Title input field with placeholder -->
+    <label>
+        <input type="text" name="title" placeholder="Python">Title
+    </label>
+    
+    <br><br>
+    
+    <!-- Date input field with placeholder -->
+    <label>
+        <input type="text" name="name" placeholder="2025-03-04">Date
+    </label>
+    
+    <br><br>
+    
+    <!-- Textarea for description with default text -->
+    <label>Description:</label>
+    <textarea rows="5" cols="50"> We will be starting Python lessons from tomorrows class. </textarea>
+    
+    <br><br>
+    
+    <!-- Buttons for text formatting options  -->
+    <button><b>B</b></button>
+    <button><i>I</i></button>
+    <button><u>U</u></button>
+    
+    <br><br>
+    
+    <!-- Cancel and Save buttons linked back to Teacher homepage -->
+    <a href="/Teacher-homepage.html">
+        <button>Cancel</button>
+    </a>
+    <a href="/Teacher-homepage.html">
+        <button>Save</button>
+    </a>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* Teacher delete page.css */
+
+/* Basic page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    background-image: url(/beige.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Page title */
+h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+button {
+    background-color: #c0392b; /* Red for delete/cancel actions */
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #a93226;
+    transform: scale(1.05);
+}
+
+/* Confirmation text */
+p {
+    font-size: 20px;
+    color: #222;
+    background-color: #fff;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
